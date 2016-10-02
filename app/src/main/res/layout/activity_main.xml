@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+
+    tools:context="com.example.android.courtcounter.MainActivity"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+
+    >
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFE600"
+        android:onClick="reset"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp">
+
+<LinearLayout
+
+
+    android:layout_height="wrap_content"
+    android:layout_width="0dp"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Team A"
+        android:textColor="#0095ff"
+        android:gravity="center_horizontal"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#000000"
+        android:padding="4dp"
+        android:textSize="48sp"
+        android:id="@+id/team_a_score"
+        android:gravity="center_horizontal"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 Points"
+        android:layout_margin="8dp"
+        android:background="#FFFFE600"
+        android:onClick="points3"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Points"
+        android:onClick="points2"
+        android:background="#fff200"
+        android:layout_margin="8dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Hit"
+        android:onClick="freehit"
+        android:background="#ffe600"
+        android:layout_margin="8dp"/>
+</LinearLayout>
+
+        <View
+            android:layout_marginTop="1dp"
+            android:layout_width="1dp"
+            android:layout_height="300sp"
+            android:background="@color/colorPrimaryDark">
+      </View>
+
+<LinearLayout
+
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Team B"
+    android:textColor="#0095ff"
+    android:textSize="24sp"
+    android:gravity="center_horizontal"
+    android:padding="4dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="0"
+    android:textColor="#000000"
+    android:textSize="48sp"
+    android:padding="4dp"
+    android:id="@+id/team_b_score"
+    android:gravity="center_horizontal"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="3 Points"
+    android:layout_margin="8dp"
+    android:background="#FFFFE600"
+    android:onClick="points3b"
+   />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="2 Points"
+    android:onClick="points2b"
+    android:background="#FFFFE600"
+    android:layout_margin="8dp"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Free Hit"
+    android:onClick="freehitb"
+    android:background="#FFFFE600"
+    android:layout_margin="8dp"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+</RelativeLayout>
